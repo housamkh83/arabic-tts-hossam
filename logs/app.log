@@ -1,0 +1,776 @@
+2025-04-24 02:41:01,407 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 02:57:02,380 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 02:57:02,682 - __main__ - INFO - Starting web interface...
+2025-04-24 02:57:02,682 - __main__ - ERROR - خطأ فادح: Blocks.launch() got an unexpected keyword argument 'enable_queue'
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\arabic_tts5\app.py", line 96, in main
+    web_ui.launch(
+  File "C:\Users\pc\Desktop\arabic_tts5\interface\gradio_ui.py", line 463, in launch
+    self.interface.launch(**kwargs)
+TypeError: Blocks.launch() got an unexpected keyword argument 'enable_queue'
+2025-04-24 02:57:02,718 - __main__ - INFO - تم إغلاق النظام
+2025-04-24 02:57:03,465 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 03:20:59,023 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 03:20:59,023 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 03:20:59,024 - __main__ - INFO - Required directories are ready.
+2025-04-24 03:23:29,317 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 03:23:29,318 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 03:23:29,320 - __main__ - INFO - Required directories are ready.
+2025-04-24 03:23:29,368 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 03:23:29,369 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 03:23:29,369 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 03:23:29,369 - __main__ - INFO - Initializing User Interface...
+2025-04-24 03:23:29,370 - __main__ - CRITICAL - An unhandled exception occurred during application runtime: WebInterface.__init__() got an unexpected keyword argument 'directories'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\app.py", line 183, in main
+    web_ui = WebInterface(config=app_config, directories=effective_dirs)
+TypeError: WebInterface.__init__() got an unexpected keyword argument 'directories'
+2025-04-24 03:23:29,372 - __main__ - INFO - Initiating application shutdown sequence.
+2025-04-24 03:23:29,372 - __main__ - INFO - Application shutdown complete.
+2025-04-24 03:26:03,562 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 03:26:03,563 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 03:26:03,563 - __main__ - INFO - Required directories are ready.
+2025-04-24 03:26:03,597 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 03:26:03,597 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 03:26:03,598 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 03:26:03,598 - __main__ - INFO - Initializing User Interface...
+2025-04-24 03:26:03,598 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 03:26:03,599 - interface.tts_interface - CRITICAL - Failed to initialize core components (excluding engine): AudioProcessor.__init__() got an unexpected keyword argument 'sample_rate'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 63, in __init__
+    self.audio_processor = AudioProcessor(sample_rate=self.audio_config.get('sample_rate', 24000))
+TypeError: AudioProcessor.__init__() got an unexpected keyword argument 'sample_rate'
+2025-04-24 03:26:03,600 - __main__ - CRITICAL - Runtime error, possibly during engine/interface initialization: Core component initialization failed: AudioProcessor.__init__() got an unexpected keyword argument 'sample_rate'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 63, in __init__
+    self.audio_processor = AudioProcessor(sample_rate=self.audio_config.get('sample_rate', 24000))
+TypeError: AudioProcessor.__init__() got an unexpected keyword argument 'sample_rate'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\app.py", line 182, in main
+    web_ui = WebInterface(
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\gradio_ui.py", line 29, in __init__
+    self.tts = TTSInterface(
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 71, in __init__
+    raise RuntimeError(f"Core component initialization failed: {e}") from e
+RuntimeError: Core component initialization failed: AudioProcessor.__init__() got an unexpected keyword argument 'sample_rate'
+2025-04-24 03:26:03,604 - __main__ - INFO - Initiating application shutdown sequence.
+2025-04-24 03:26:03,604 - __main__ - INFO - Application shutdown complete.
+2025-04-24 03:31:28,114 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 03:31:28,114 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 03:31:28,115 - __main__ - INFO - Required directories are ready.
+2025-04-24 03:31:28,158 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 03:31:28,159 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 03:31:28,159 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 03:31:28,160 - __main__ - INFO - Initializing User Interface...
+2025-04-24 03:31:28,160 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 03:31:28,161 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 03:31:50,295 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 03:31:50,295 - interface.tts_interface - INFO - TTS Interface initialized successfully
+2025-04-24 03:31:50,296 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 03:31:50,548 - __main__ - INFO - User Interface initialized.
+2025-04-24 03:31:50,548 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 03:31:50,548 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 03:31:50,549 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 03:31:50,549 - __main__ - CRITICAL - An unhandled exception occurred during application runtime: Blocks.launch() got an unexpected keyword argument 'enable_queue'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\app.py", line 231, in main
+    web_ui.run(**launch_kwargs)  # استخدام run بدلاً من launch مباشرة
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\gradio_ui.py", line 142, in run
+    return self.launch(**kwargs)
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\gradio_ui.py", line 136, in launch
+    self.interface.launch(**kwargs)
+TypeError: Blocks.launch() got an unexpected keyword argument 'enable_queue'
+2025-04-24 03:31:50,552 - __main__ - INFO - Initiating application shutdown sequence.
+2025-04-24 03:31:50,553 - __main__ - INFO - Application shutdown complete.
+2025-04-24 03:31:51,416 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 03:32:35,230 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 03:32:35,231 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 03:32:35,232 - __main__ - INFO - Required directories are ready.
+2025-04-24 03:32:35,274 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 03:32:35,275 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 03:32:35,275 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 03:32:35,276 - __main__ - INFO - Initializing User Interface...
+2025-04-24 03:32:35,276 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 03:32:35,276 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 03:32:56,772 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 03:32:56,773 - interface.tts_interface - INFO - TTS Interface initialized successfully
+2025-04-24 03:32:56,776 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 03:32:57,025 - __main__ - INFO - User Interface initialized.
+2025-04-24 03:32:57,025 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 03:32:57,028 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 03:32:57,029 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 03:32:57,030 - __main__ - CRITICAL - An unhandled exception occurred during application runtime: Blocks.launch() got an unexpected keyword argument 'enable_queue'
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\arabic_tts5\app.py", line 231, in main
+    web_ui.run(**launch_kwargs)  # استخدام run بدلاً من launch مباشرة
+  File "C:\Users\pc\Desktop\arabic_tts5\interface\gradio_ui.py", line 142, in run
+    return self.launch(**kwargs)
+  File "C:\Users\pc\Desktop\arabic_tts5\interface\gradio_ui.py", line 136, in launch
+    self.interface.launch(**kwargs)
+TypeError: Blocks.launch() got an unexpected keyword argument 'enable_queue'
+2025-04-24 03:32:57,034 - __main__ - INFO - Initiating application shutdown sequence.
+2025-04-24 03:32:57,036 - __main__ - INFO - Application shutdown complete.
+2025-04-24 03:32:57,893 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 03:35:52,180 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 03:35:52,180 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 03:35:52,182 - __main__ - INFO - Required directories are ready.
+2025-04-24 03:35:52,228 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 03:35:52,228 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 03:35:52,230 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 03:35:52,231 - __main__ - INFO - Initializing User Interface...
+2025-04-24 03:35:52,232 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 03:35:52,234 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 03:36:13,587 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 03:36:13,588 - interface.tts_interface - INFO - TTS Interface initialized successfully
+2025-04-24 03:36:13,591 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 03:36:13,842 - __main__ - INFO - User Interface initialized.
+2025-04-24 03:36:13,842 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 03:36:13,845 - __main__ - CRITICAL - An unhandled exception occurred during application runtime: name 'max_threads' is not defined
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\arabic_tts5\app.py", line 214, in main
+    'concurrency_count': max_threads,  # Instead of max_threads
+NameError: name 'max_threads' is not defined
+2025-04-24 03:36:13,852 - __main__ - INFO - Initiating application shutdown sequence.
+2025-04-24 03:36:13,852 - __main__ - INFO - Application shutdown complete.
+2025-04-24 03:36:15,138 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 03:38:40,454 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 03:38:40,454 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 03:38:40,455 - __main__ - INFO - Required directories are ready.
+2025-04-24 03:38:40,493 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 03:38:40,493 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 03:38:40,493 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 03:38:40,494 - __main__ - INFO - Initializing User Interface...
+2025-04-24 03:38:40,494 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 03:38:40,495 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 03:39:01,490 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 03:39:01,490 - interface.tts_interface - INFO - TTS Interface initialized successfully
+2025-04-24 03:39:01,491 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 03:39:01,744 - __main__ - INFO - User Interface initialized.
+2025-04-24 03:39:01,745 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 03:39:01,745 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 03:39:01,745 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 03:39:01,746 - __main__ - CRITICAL - An unhandled exception occurred during application runtime: Blocks.launch() got an unexpected keyword argument 'concurrency_count'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\app.py", line 228, in main
+    web_ui.run(**launch_kwargs)
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\gradio_ui.py", line 142, in run
+    return self.launch(**kwargs)
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\gradio_ui.py", line 136, in launch
+    self.interface.launch(**kwargs)
+TypeError: Blocks.launch() got an unexpected keyword argument 'concurrency_count'
+2025-04-24 03:39:01,747 - __main__ - INFO - Initiating application shutdown sequence.
+2025-04-24 03:39:01,747 - __main__ - INFO - Application shutdown complete.
+2025-04-24 03:39:02,515 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 03:40:52,948 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 03:40:52,948 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 03:40:52,949 - __main__ - INFO - Required directories are ready.
+2025-04-24 03:40:52,983 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 03:40:52,983 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 03:40:52,983 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 03:40:52,984 - __main__ - INFO - Initializing User Interface...
+2025-04-24 03:40:52,984 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 03:40:52,984 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 03:41:14,249 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 03:41:14,250 - interface.tts_interface - INFO - TTS Interface initialized successfully
+2025-04-24 03:41:14,250 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 03:41:14,501 - __main__ - INFO - User Interface initialized.
+2025-04-24 03:41:14,501 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 03:41:14,502 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 03:41:14,502 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 03:41:15,422 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 03:41:16,924 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 03:41:19,249 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 03:41:20,149 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 03:41:22,802 - __main__ - INFO - Initiating application shutdown sequence.
+2025-04-24 03:41:22,804 - __main__ - INFO - Application shutdown complete.
+2025-04-24 03:41:52,678 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 03:41:52,679 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 03:41:52,680 - __main__ - INFO - Required directories are ready.
+2025-04-24 03:41:52,726 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 03:41:52,726 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 03:41:52,728 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 03:41:52,729 - __main__ - INFO - Initializing User Interface...
+2025-04-24 03:41:52,729 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 03:41:52,730 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 03:42:13,780 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 03:42:13,780 - interface.tts_interface - INFO - TTS Interface initialized successfully
+2025-04-24 03:42:13,783 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 03:42:14,032 - __main__ - INFO - User Interface initialized.
+2025-04-24 03:42:14,032 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 03:42:14,034 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 03:42:14,035 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 03:42:14,969 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 03:42:16,438 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 03:42:18,562 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 03:42:20,044 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 03:42:21,037 - __main__ - INFO - Initiating application shutdown sequence.
+2025-04-24 03:42:21,041 - __main__ - INFO - Application shutdown complete.
+2025-04-24 04:00:30,451 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 04:00:30,451 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 04:00:30,452 - __main__ - INFO - Required directories are ready.
+2025-04-24 04:00:30,494 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 04:00:30,494 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 04:00:30,494 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 04:00:30,494 - __main__ - INFO - Initializing User Interface...
+2025-04-24 04:00:30,495 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 04:00:30,495 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 04:00:52,147 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 04:00:52,148 - interface.tts_interface - INFO - TTS Interface initialized successfully
+2025-04-24 04:00:52,148 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 04:00:52,454 - __main__ - INFO - User Interface initialized.
+2025-04-24 04:00:52,454 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 04:00:52,455 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 04:00:52,455 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 04:00:53,404 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 04:00:54,880 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 04:00:56,981 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 04:00:57,888 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 04:17:27,623 - interface.gradio_ui - ERROR - خطأ في توليد الصوت: __enter__
+Traceback (most recent call last):
+  File "C:\Users\pc\Desktop\arabic_tts5\interface\gradio_ui.py", line 114, in _generate_speech
+    with gr.Progress() as progress:
+AttributeError: __enter__
+2025-04-24 04:25:27,625 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 04:25:27,626 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 04:25:27,626 - __main__ - INFO - Required directories are ready.
+2025-04-24 04:25:27,674 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 04:25:27,675 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 04:25:27,675 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 04:25:27,675 - __main__ - INFO - Initializing User Interface...
+2025-04-24 04:25:27,676 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 04:25:27,676 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 04:25:49,309 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 04:25:49,309 - interface.tts_interface - INFO - TTS Interface initialized successfully
+2025-04-24 04:25:49,310 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 04:25:49,642 - __main__ - INFO - User Interface initialized.
+2025-04-24 04:25:49,643 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 04:25:49,643 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 04:25:49,643 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 04:25:50,586 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 04:25:52,098 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 04:25:54,216 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 04:25:55,121 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 04:26:40,549 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 04:26:40,550 - interface.tts_interface - CRITICAL - Unhandled error during TTS request processing: WebInterface._generate_speech.<locals>.progress_callback() got an unexpected keyword argument 'desc'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 152, in process_request
+    if progress: progress(0, desc=status_message)
+TypeError: WebInterface._generate_speech.<locals>.progress_callback() got an unexpected keyword argument 'desc'
+2025-04-24 04:31:13,906 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 04:31:13,907 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 04:31:13,907 - __main__ - INFO - Required directories are ready.
+2025-04-24 04:31:13,947 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 04:31:13,948 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 04:31:13,948 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 04:31:13,948 - __main__ - INFO - Initializing User Interface...
+2025-04-24 04:31:13,949 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 04:31:13,949 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 04:31:35,111 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 04:31:35,112 - interface.tts_interface - INFO - TTS Interface initialized successfully
+2025-04-24 04:31:35,112 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 04:31:35,365 - __main__ - INFO - User Interface initialized.
+2025-04-24 04:31:35,366 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 04:31:35,366 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 04:31:35,367 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 04:31:36,275 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 04:31:37,785 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 04:31:39,888 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 04:31:40,783 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 04:32:30,243 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 04:32:30,244 - interface.tts_interface - ERROR - Reference voice file not found or not a file: voices\default.wav
+2025-04-24 04:32:30,245 - interface.tts_interface - WARNING - Input validation failed: ملف الصوت المرجعي غير موجود: default.wav
+2025-04-24 04:43:44,534 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 04:43:44,535 - interface.tts_interface - ERROR - Reference voice file not found or not a file: voices\default.wav
+2025-04-24 04:43:44,536 - interface.tts_interface - WARNING - Input validation failed: ملف الصوت المرجعي غير موجود: default.wav
+2025-04-24 04:45:06,176 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 04:45:06,178 - interface.tts_interface - INFO - تهيئة المحرك (إذا لزم الأمر)...
+2025-04-24 04:45:06,179 - interface.tts_interface - CRITICAL - Unhandled error during TTS request processing: 'TTSInterface' object has no attribute 'engine_initialized'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 174, in process_request
+    self._lazy_initialize_engine()
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 86, in _lazy_initialize_engine
+    if not self.engine_initialized:
+AttributeError: 'TTSInterface' object has no attribute 'engine_initialized'
+2025-04-24 04:50:18,233 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 04:50:18,233 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 04:50:18,234 - __main__ - INFO - Required directories are ready.
+2025-04-24 04:50:18,292 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 04:50:18,292 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 04:50:18,292 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 04:50:18,292 - __main__ - INFO - Initializing User Interface...
+2025-04-24 04:50:18,293 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 04:50:18,293 - interface.tts_interface - INFO - Initializing TTS Engine...
+2025-04-24 04:50:18,293 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 04:50:39,887 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 04:50:39,888 - interface.tts_interface - INFO - TTS Interface initialized successfully
+2025-04-24 04:50:40,171 - __main__ - INFO - User Interface initialized.
+2025-04-24 04:50:40,171 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 04:50:40,172 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 04:50:40,172 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 04:50:41,091 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 04:50:42,574 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 04:50:44,838 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 04:50:45,727 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 04:52:05,259 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 04:52:05,260 - interface.tts_interface - CRITICAL - Unhandled error during TTS request processing: 'TTSInterface' object has no attribute 'emotion_settings'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 129, in process_request
+    effective_emotion = emotion if emotion in self.emotion_settings else "طبيعي"
+AttributeError: 'TTSInterface' object has no attribute 'emotion_settings'
+2025-04-24 04:55:30,972 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 04:55:30,973 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 04:55:30,974 - __main__ - INFO - Required directories are ready.
+2025-04-24 04:55:31,014 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 04:55:31,014 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 04:55:31,015 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 04:55:31,015 - __main__ - INFO - Initializing User Interface...
+2025-04-24 04:55:31,015 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 04:55:31,016 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 04:55:31,220 - __main__ - INFO - User Interface initialized.
+2025-04-24 04:55:31,220 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 04:55:31,221 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 04:55:31,221 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 04:55:32,192 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 04:55:33,456 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 04:55:35,567 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 04:55:36,467 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 04:56:31,230 - interface.tts_interface - INFO - Initializing TTS Engine (this may take a moment)...
+2025-04-24 04:56:31,231 - core.tts_engine - INFO - جاري تهيئة نموذج TTS...
+2025-04-24 04:56:54,289 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 04:56:54,290 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 04:56:54,291 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 04:56:54,293 - core.tts_engine - INFO - توليد صوت للنص: ['m l aa H Z h']...
+2025-04-24 04:56:54,294 - core.tts_engine - ERROR - خطأ في توليد الصوت: 'TextToSpeech' object has no attribute 'load_voice'
+2025-04-24 04:56:54,294 - interface.tts_interface - ERROR - Error processing request: 'TextToSpeech' object has no attribute 'load_voice'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 124, in process_request
+    audio_data = self.tts_engine.generate(
+  File "c:\Users\pc\Desktop\arabic_tts5\core\tts_engine.py", line 86, in generate
+    voice_samples = self.model.load_voice(voice_file)
+AttributeError: 'TextToSpeech' object has no attribute 'load_voice'
+2025-04-24 05:02:02,303 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 05:02:02,304 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 05:02:02,304 - __main__ - INFO - Required directories are ready.
+2025-04-24 05:02:02,351 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 05:02:02,352 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 05:02:02,352 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 05:02:02,353 - __main__ - INFO - Initializing User Interface...
+2025-04-24 05:02:02,353 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 05:02:02,355 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 05:02:02,546 - __main__ - INFO - User Interface initialized.
+2025-04-24 05:02:02,546 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 05:02:02,547 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 05:02:02,547 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 05:02:03,436 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 05:02:04,779 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 05:02:06,876 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 05:02:07,813 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 05:02:38,929 - interface.tts_interface - INFO - Initializing TTS Engine (this may take a moment)...
+2025-04-24 05:02:38,930 - core.tts_engine - INFO - Initializing TTS Engine on cuda
+2025-04-24 05:03:00,745 - core.tts_engine - ERROR - خطأ في تحميل الأصوات المدمجة: load_voices() missing 1 required positional argument: 'voices'
+2025-04-24 05:03:00,746 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 05:03:00,747 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 05:03:00,747 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 05:03:00,763 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'voices\default.wav': 'voices\\default.wav'
+2025-04-24 05:03:00,922 - core.tts_engine - ERROR - خطأ في توليد الصوت: 'list' object has no attribute 'encode'
+2025-04-24 05:03:00,923 - interface.tts_interface - ERROR - Error processing request: 'list' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 124, in process_request
+    audio_data = self.tts_engine.generate(
+  File "c:\Users\pc\Desktop\arabic_tts5\core\tts_engine.py", line 77, in generate
+    gen_audio = self.tts.tts(
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\api.py", line 379, in tts
+    text_tokens = torch.IntTensor(self.tokenizer.encode(text)).unsqueeze(0).to(self.device)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 183, in encode
+    txt = self.preprocess_text(txt)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 144, in english_cleaners
+    text = convert_to_ascii(text)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 124, in convert_to_ascii
+    return unidecode(text)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\unidecode\__init__.py", line 60, in unidecode_expect_ascii
+    bytestring = string.encode('ASCII')
+AttributeError: 'list' object has no attribute 'encode'
+2025-04-24 05:05:02,259 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 05:05:02,259 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 05:05:02,260 - __main__ - INFO - Required directories are ready.
+2025-04-24 05:05:02,302 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 05:05:02,302 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 05:05:02,302 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 05:05:02,303 - __main__ - INFO - Initializing User Interface...
+2025-04-24 05:05:02,303 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 05:05:02,303 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 05:05:02,498 - __main__ - INFO - User Interface initialized.
+2025-04-24 05:05:02,498 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 05:05:02,499 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 05:05:02,499 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 05:05:03,327 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 05:05:04,721 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 05:05:06,846 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 05:05:07,750 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 05:05:35,093 - interface.tts_interface - INFO - Initializing TTS Engine (this may take a moment)...
+2025-04-24 05:05:35,094 - core.tts_engine - INFO - Initializing TTS Engine on cuda
+2025-04-24 05:05:57,555 - core.tts_engine - ERROR - خطأ في تحميل الأصوات المدمجة: load_voices() missing 1 required positional argument: 'voices'
+2025-04-24 05:05:57,556 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 05:05:57,556 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 05:05:57,556 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 05:05:57,572 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'voices\default.wav': 'voices\\default.wav'
+2025-04-24 05:05:57,610 - core.tts_engine - ERROR - خطأ في توليد الصوت: 'list' object has no attribute 'encode'
+2025-04-24 05:05:57,611 - interface.tts_interface - ERROR - Error processing request: 'list' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 124, in process_request
+    audio_data = self.tts_engine.generate(
+  File "c:\Users\pc\Desktop\arabic_tts5\core\tts_engine.py", line 77, in generate
+    gen_audio = self.tts.tts(
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\api.py", line 379, in tts
+    text_tokens = torch.IntTensor(self.tokenizer.encode(text)).unsqueeze(0).to(self.device)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 183, in encode
+    txt = self.preprocess_text(txt)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 144, in english_cleaners
+    text = convert_to_ascii(text)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 124, in convert_to_ascii
+    return unidecode(text)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\unidecode\__init__.py", line 60, in unidecode_expect_ascii
+    bytestring = string.encode('ASCII')
+AttributeError: 'list' object has no attribute 'encode'
+2025-04-24 05:08:26,758 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 05:08:26,758 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 05:08:26,759 - __main__ - INFO - Required directories are ready.
+2025-04-24 05:08:26,802 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 05:08:26,803 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 05:08:26,803 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 05:08:26,804 - __main__ - INFO - Initializing User Interface...
+2025-04-24 05:08:26,804 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 05:08:26,805 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 05:08:27,002 - __main__ - INFO - User Interface initialized.
+2025-04-24 05:08:27,002 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 05:08:27,002 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 05:08:27,003 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 05:08:27,903 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 05:08:29,261 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 05:08:31,375 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 05:08:32,459 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 05:08:54,801 - interface.tts_interface - INFO - Initializing TTS Engine (this may take a moment)...
+2025-04-24 05:08:54,802 - core.tts_engine - INFO - Initializing TTS Engine on cuda
+2025-04-24 05:09:16,639 - core.tts_engine - ERROR - خطأ في تحميل الأصوات المدمجة: load_voices() missing 1 required positional argument: 'voices'
+2025-04-24 05:09:16,640 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 05:09:16,640 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 05:09:16,641 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 05:09:16,656 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'voices\default.wav': 'voices\\default.wav'
+2025-04-24 05:09:16,694 - core.tts_engine - ERROR - خطأ في توليد الصوت: 'list' object has no attribute 'encode'
+2025-04-24 05:09:16,695 - interface.tts_interface - ERROR - Error processing request: 'list' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 124, in process_request
+    audio_data = self.tts_engine.generate(
+  File "c:\Users\pc\Desktop\arabic_tts5\core\tts_engine.py", line 77, in generate
+    gen_audio = self.tts.tts(
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\api.py", line 379, in tts
+    text_tokens = torch.IntTensor(self.tokenizer.encode(text)).unsqueeze(0).to(self.device)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 183, in encode
+    txt = self.preprocess_text(txt)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 144, in english_cleaners
+    text = convert_to_ascii(text)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 124, in convert_to_ascii
+    return unidecode(text)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\unidecode\__init__.py", line 60, in unidecode_expect_ascii
+    bytestring = string.encode('ASCII')
+AttributeError: 'list' object has no attribute 'encode'
+2025-04-24 12:09:20,878 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 12:09:20,878 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 12:09:20,879 - __main__ - INFO - Required directories are ready.
+2025-04-24 12:09:20,951 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 12:09:20,951 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 12:09:20,952 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 12:09:20,952 - __main__ - INFO - Initializing User Interface...
+2025-04-24 12:09:20,952 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 12:09:20,953 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 12:09:21,175 - __main__ - INFO - User Interface initialized.
+2025-04-24 12:09:21,175 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 12:09:21,175 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 12:09:21,176 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 12:09:22,006 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 12:09:23,425 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 12:09:25,708 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 12:09:26,653 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 12:09:54,457 - interface.tts_interface - INFO - Initializing TTS Engine (this may take a moment)...
+2025-04-24 12:09:54,458 - core.tts_engine - INFO - Initializing TTS Engine on cuda
+2025-04-24 12:10:17,306 - core.tts_engine - ERROR - خطأ في تحميل الأصوات المدمجة: load_voices() missing 1 required positional argument: 'voices'
+2025-04-24 12:10:17,307 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 12:10:17,308 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 12:10:17,308 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 12:10:17,340 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'voices\default.wav': 'voices\\default.wav'
+2025-04-24 12:16:11,186 - core.audio_processor - ERROR - خطأ في حفظ الصوت: Invalid shape: (1, 1, 65536) (too many dimensions)
+2025-04-24 12:16:11,187 - interface.tts_interface - ERROR - Error processing request: Invalid shape: (1, 1, 65536) (too many dimensions)
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 139, in process_request
+    self.audio_processor.save_audio(audio_data, output_path)
+  File "c:\Users\pc\Desktop\arabic_tts5\core\audio_processor.py", line 46, in save_audio
+    sf.write(str(path), audio_data, self.sample_rate)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\soundfile.py", line 366, in write
+    f.write(data)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\soundfile.py", line 1068, in write
+    written = self._array_io('write', data, len(data))
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\soundfile.py", line 1385, in _array_io
+    raise ValueError("Invalid shape: {0!r} ({1})".format(array.shape, "0 dimensions not supported" if array.ndim < 1 else "too many dimensions"))
+ValueError: Invalid shape: (1, 1, 65536) (too many dimensions)
+2025-04-24 12:50:11,199 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 12:50:11,200 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 12:50:11,201 - __main__ - INFO - Required directories are ready.
+2025-04-24 12:50:11,264 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 12:50:11,264 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 12:50:11,264 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 12:50:11,264 - __main__ - INFO - Initializing User Interface...
+2025-04-24 12:50:11,265 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 12:50:11,265 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 12:50:11,460 - __main__ - INFO - User Interface initialized.
+2025-04-24 12:50:11,461 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 12:50:11,461 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 12:50:11,461 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 12:50:12,365 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 12:50:13,721 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 12:50:15,835 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 12:50:16,795 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 12:50:43,728 - interface.tts_interface - INFO - Initializing TTS Engine (this may take a moment)...
+2025-04-24 12:50:43,729 - core.tts_engine - INFO - Initializing TTS Engine on cuda
+2025-04-24 12:51:06,024 - core.tts_engine - ERROR - خطأ في تحميل الأصوات المدمجة: load_voices() missing 1 required positional argument: 'voices'
+2025-04-24 12:51:06,025 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 12:51:06,025 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 12:51:06,026 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 12:51:06,053 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'voices\default.wav': 'voices\\default.wav'
+2025-04-24 12:55:49,210 - core.audio_processor - INFO - تم حفظ الصوت في: output\tts_1745488549.wav
+2025-04-24 12:55:49,211 - interface.tts_interface - INFO - Request completed: تم إنشاء الصوت بنجاح
+2025-04-24 13:15:28,470 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 13:15:28,471 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 13:15:28,472 - __main__ - INFO - Required directories are ready.
+2025-04-24 13:15:28,514 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 13:15:28,515 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 13:15:28,515 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 13:15:28,516 - __main__ - INFO - Initializing User Interface...
+2025-04-24 13:15:28,516 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 13:15:28,516 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 13:15:28,724 - __main__ - INFO - User Interface initialized.
+2025-04-24 13:15:28,724 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 13:15:28,725 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 13:15:28,725 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 13:15:29,548 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 13:15:30,999 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 13:15:33,120 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 13:15:34,041 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 13:16:20,011 - interface.tts_interface - INFO - Initializing TTS Engine (this may take a moment)...
+2025-04-24 13:16:20,012 - core.tts_engine - INFO - Initializing TTS Engine on cuda
+2025-04-24 13:16:43,409 - core.tts_engine - ERROR - خطأ في تحميل الأصوات المدمجة: load_voices() missing 1 required positional argument: 'voices'
+2025-04-24 13:16:43,410 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 13:16:43,410 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 13:16:43,411 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 13:16:43,440 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'voices\default.wav': 'voices\\default.wav'
+2025-04-24 13:20:21,223 - core.audio_processor - INFO - تم حفظ الصوت في: output\tts_1745490021.wav
+2025-04-24 13:20:21,224 - interface.tts_interface - INFO - Request completed: تم إنشاء الصوت بنجاح
+2025-04-24 13:21:22,774 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=2, emotion='طبيعي'
+2025-04-24 13:21:22,790 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'voices\default.wav': 'voices\\default.wav'
+2025-04-24 13:24:34,534 - core.audio_processor - INFO - تم حفظ الصوت في: output\tts_1745490274.wav
+2025-04-24 13:24:34,534 - interface.tts_interface - INFO - Request completed: تم إنشاء الصوت بنجاح
+2025-04-24 13:40:09,113 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 13:40:09,113 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 13:40:09,114 - __main__ - INFO - Required directories are ready.
+2025-04-24 13:40:09,163 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 13:40:09,164 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 13:40:09,164 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 13:40:09,164 - __main__ - INFO - Initializing User Interface...
+2025-04-24 13:40:09,165 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 13:40:09,165 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 13:40:09,388 - __main__ - INFO - User Interface initialized.
+2025-04-24 13:40:09,389 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 13:40:09,389 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 13:40:09,389 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 13:40:10,201 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 13:40:11,631 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 13:40:13,730 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 13:40:14,648 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 13:41:26,547 - interface.tts_interface - INFO - Initializing TTS Engine (this may take a moment)...
+2025-04-24 13:41:26,548 - core.tts_engine - INFO - Initializing TTS Engine on cuda
+2025-04-24 13:41:48,165 - core.tts_engine - ERROR - خطأ في تحميل الأصوات المدمجة: load_voices() missing 1 required positional argument: 'voices'
+2025-04-24 13:41:48,166 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 13:41:48,166 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 13:41:48,167 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 13:41:48,181 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'voices\default.wav': 'voices\\default.wav'
+2025-04-24 13:46:26,751 - core.audio_processor - INFO - تم حفظ الصوت في: output\tts_1745491586.wav
+2025-04-24 13:46:26,751 - interface.tts_interface - INFO - Request completed: تم إنشاء الصوت بنجاح
+2025-04-24 13:51:01,682 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 13:51:01,682 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 13:51:01,683 - __main__ - INFO - Required directories are ready.
+2025-04-24 13:51:01,743 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 13:51:01,744 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 13:51:01,744 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 13:51:01,745 - __main__ - INFO - Initializing User Interface...
+2025-04-24 13:51:01,745 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 13:51:01,746 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 13:51:01,998 - __main__ - INFO - User Interface initialized.
+2025-04-24 13:51:01,999 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 13:51:01,999 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 13:51:02,000 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 13:51:02,963 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 13:51:04,238 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 13:51:06,348 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 13:51:07,283 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 13:51:49,497 - interface.tts_interface - INFO - Initializing TTS Engine (this may take a moment)...
+2025-04-24 13:51:49,497 - core.tts_engine - INFO - Initializing TTS Engine on cuda
+2025-04-24 13:52:04,308 - core.tts_engine - ERROR - فشل في تهيئة محرك TTS: No module named 'deepspeed'
+2025-04-24 13:52:04,309 - interface.tts_interface - ERROR - Failed to initialize TTS Engine: No module named 'deepspeed'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 74, in _lazy_initialize_engine
+    self.tts_engine = EnhancedTTSEngine(
+  File "c:\Users\pc\Desktop\arabic_tts5\core\tts_engine.py", line 22, in __init__
+    self.tts = TextToSpeech(
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\api.py", line 218, in __init__
+    self.autoregressive.post_init_gpt2_config(use_deepspeed=use_deepspeed, kv_cache=kv_cache, half=self.half)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\models\autoregressive.py", line 380, in post_init_gpt2_config
+    import deepspeed
+ModuleNotFoundError: No module named 'deepspeed'
+2025-04-24 13:52:04,316 - interface.tts_interface - ERROR - فشل في تهيئة محرك TTS
+2025-04-24 13:54:13,694 - __main__ - INFO - Initiating application shutdown sequence.
+2025-04-24 13:54:13,695 - __main__ - INFO - Application shutdown complete.
+2025-04-24 13:55:37,357 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 13:55:37,357 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 13:55:37,358 - __main__ - INFO - Required directories are ready.
+2025-04-24 13:55:37,408 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 13:55:37,409 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 13:55:37,409 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 13:55:37,409 - __main__ - INFO - Initializing User Interface...
+2025-04-24 13:55:37,410 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 13:55:37,410 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 13:55:37,602 - __main__ - INFO - User Interface initialized.
+2025-04-24 13:55:37,603 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 13:55:37,603 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 13:55:37,603 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 13:55:38,543 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 13:55:39,850 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 13:55:41,966 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 13:55:42,931 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 13:56:11,914 - interface.tts_interface - INFO - Initializing TTS Engine (this may take a moment)...
+2025-04-24 13:56:11,915 - core.tts_engine - INFO - Initializing TTS Engine on cuda
+2025-04-24 13:56:11,916 - core.tts_engine - WARNING - DeepSpeed not available - falling back to standard mode
+2025-04-24 13:56:35,304 - core.tts_engine - ERROR - خطأ في تحميل الأصوات المدمجة: load_voices() missing 1 required positional argument: 'voices'
+2025-04-24 13:56:35,305 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 13:56:35,305 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 13:56:35,306 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 13:56:35,320 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'voices\default.wav': 'voices\\default.wav'
+2025-04-24 13:56:35,358 - core.tts_engine - ERROR - خطأ في توليد الصوت: 'list' object has no attribute 'encode'
+2025-04-24 13:56:35,359 - interface.tts_interface - ERROR - Error processing request: 'list' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 124, in process_request
+    audio_data = self.tts_engine.generate(
+  File "c:\Users\pc\Desktop\arabic_tts5\core\tts_engine.py", line 77, in generate
+    gen_audio = self.tts.tts(
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\api.py", line 379, in tts
+    text_tokens = torch.IntTensor(self.tokenizer.encode(text)).unsqueeze(0).to(self.device)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 183, in encode
+    txt = self.preprocess_text(txt)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 144, in english_cleaners
+    text = convert_to_ascii(text)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\tortoise\utils\tokenizer.py", line 124, in convert_to_ascii
+    return unidecode(text)
+  File "C:\Users\pc\Desktop\arabic_tts5\venv\lib\site-packages\unidecode\__init__.py", line 60, in unidecode_expect_ascii
+    bytestring = string.encode('ASCII')
+AttributeError: 'list' object has no attribute 'encode'
+2025-04-24 14:01:05,979 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 14:01:05,979 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 14:01:05,980 - __main__ - INFO - Required directories are ready.
+2025-04-24 14:01:06,022 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 14:01:06,023 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 14:01:06,023 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 14:01:06,024 - __main__ - INFO - Initializing User Interface...
+2025-04-24 14:01:06,024 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 14:01:06,025 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 14:01:06,219 - __main__ - INFO - User Interface initialized.
+2025-04-24 14:01:06,220 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 14:01:06,220 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 14:01:06,220 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 14:01:07,098 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 14:01:08,433 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 14:01:10,541 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 14:01:11,506 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 14:01:31,200 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 14:01:31,203 - interface.tts_interface - ERROR - Error processing request: 'NoneType' object has no attribute 'generate'
+Traceback (most recent call last):
+  File "c:\Users\pc\Desktop\arabic_tts5\interface\tts_interface.py", line 110, in process_request
+    audio_data = self.tts_engine.generate(
+AttributeError: 'NoneType' object has no attribute 'generate'
+2025-04-24 14:05:04,922 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 14:05:04,922 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 14:05:04,923 - __main__ - INFO - Required directories are ready.
+2025-04-24 14:05:04,959 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 14:05:04,960 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 14:05:04,960 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 14:05:04,960 - __main__ - INFO - Initializing User Interface...
+2025-04-24 14:05:04,960 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 14:05:04,961 - core.tts_engine - INFO - Initializing TTS Engine on cuda
+2025-04-24 14:05:04,961 - core.tts_engine - WARNING - DeepSpeed not available - falling back to standard mode
+2025-04-24 14:05:26,143 - core.tts_engine - ERROR - خطأ في تحميل الأصوات المدمجة: load_voices() missing 1 required positional argument: 'voices'
+2025-04-24 14:05:26,144 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 14:05:26,144 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 14:05:26,144 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 14:05:26,388 - __main__ - INFO - User Interface initialized.
+2025-04-24 14:05:26,388 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 14:05:26,388 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 14:05:26,389 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 14:05:27,344 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 14:05:28,798 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 14:05:30,922 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 14:05:31,838 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 14:05:57,002 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='طبيعي'
+2025-04-24 14:05:57,029 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'default.wav': 'default.wav'
+2025-04-24 14:10:56,218 - core.audio_processor - INFO - تم حفظ الصوت في: output\tts_1745493056.wav
+2025-04-24 15:29:38,459 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 15:29:38,460 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 15:29:38,461 - __main__ - INFO - Required directories are ready.
+2025-04-24 15:29:38,502 - utils.gpu_manager - INFO - GPU is available: NVIDIA GeForce RTX 3060
+2025-04-24 15:29:38,502 - utils.gpu_manager - INFO - Number of devices: 1
+2025-04-24 15:29:38,503 - utils.gpu_manager - INFO - CUDA version: 11.8
+2025-04-24 15:29:38,503 - __main__ - INFO - Initializing User Interface...
+2025-04-24 15:29:38,504 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 15:29:38,505 - core.tts_engine - INFO - Initializing TTS Engine on cuda
+2025-04-24 15:29:38,506 - core.tts_engine - WARNING - DeepSpeed not available - falling back to standard mode
+2025-04-24 15:29:59,701 - core.tts_engine - ERROR - خطأ في تحميل الأصوات المدمجة: load_voices() missing 1 required positional argument: 'voices'
+2025-04-24 15:29:59,701 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 15:29:59,704 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 15:29:59,705 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 15:29:59,962 - __main__ - INFO - User Interface initialized.
+2025-04-24 15:29:59,962 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 15:29:59,964 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 15:29:59,965 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 15:30:00,921 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 15:30:02,387 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 15:30:04,512 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 15:30:05,447 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+2025-04-24 15:31:08,010 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='سعيد'
+2025-04-24 15:31:08,032 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'default.wav': 'default.wav'
+2025-04-24 15:36:25,853 - core.audio_processor - INFO - تم حفظ الصوت في: output\tts_1745498185.wav
+2025-04-24 15:37:34,393 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عادية', speed=1, emotion='حزين'
+2025-04-24 15:37:34,411 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'default.wav': 'default.wav'
+2025-04-24 15:40:03,700 - core.audio_processor - INFO - تم حفظ الصوت في: output\tts_1745498403.wav
+2025-04-24 15:42:17,271 - interface.tts_interface - INFO - Processing TTS request: voice='default.wav', quality='عالية', speed=1, emotion='طبيعي'
+2025-04-24 15:42:17,289 - core.tts_engine - ERROR - خطأ في تحميل الصوت المرجعي 'default.wav': 'default.wav'
+2025-04-24 15:47:39,941 - core.audio_processor - INFO - تم حفظ الصوت في: output\tts_1745498859.wav
+2025-04-24 20:33:19,217 - __main__ - INFO - Starting Arabic TTS Application...
+2025-04-24 20:33:19,217 - __main__ - INFO - Ensuring required directories exist...
+2025-04-24 20:33:19,218 - __main__ - INFO - Required directories are ready.
+2025-04-24 20:33:19,218 - utils.gpu_manager - WARNING - No GPU detected. Running on CPU mode.
+2025-04-24 20:33:19,219 - __main__ - WARNING - Running on CPU or GPU setup failed.
+2025-04-24 20:33:19,219 - __main__ - INFO - Initializing User Interface...
+2025-04-24 20:33:19,219 - interface.tts_interface - INFO - Initializing TTS Interface Logic...
+2025-04-24 20:33:19,219 - core.tts_engine - INFO - Initializing TTS Engine on cpu
+2025-04-24 20:33:19,220 - core.tts_engine - WARNING - DeepSpeed not available - falling back to standard mode
+2025-04-24 20:33:41,715 - core.tts_engine - ERROR - خطأ في تحميل الأصوات المدمجة: load_voices() missing 1 required positional argument: 'voices'
+2025-04-24 20:33:41,716 - core.tts_engine - INFO - تم تهيئة النموذج بنجاح
+2025-04-24 20:33:41,717 - interface.tts_interface - INFO - TTS Engine initialized successfully
+2025-04-24 20:33:41,717 - interface.tts_interface - INFO - TTS Interface Logic initialized successfully.
+2025-04-24 20:33:41,953 - __main__ - INFO - User Interface initialized.
+2025-04-24 20:33:41,954 - __main__ - INFO - Basic authentication is DISABLED.
+2025-04-24 20:33:41,955 - __main__ - INFO - Launching Gradio Interface on http://0.0.0.0:7860
+2025-04-24 20:33:41,955 - __main__ - INFO - Gradio Live link will be generated (requires internet connection).
+2025-04-24 20:33:42,716 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-04-24 20:33:44,185 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-04-24 20:33:46,454 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-04-24 20:33:47,354 - httpx - INFO - HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"

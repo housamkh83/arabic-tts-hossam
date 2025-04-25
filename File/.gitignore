@@ -1,0 +1,23 @@
+# Python Virtual Environment
+venv/
+/venv/
+*.pyc
+__pycache__/
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+
+# Cache and Log files
+logs/
+*.log
+.cache/
+huggingface_hub/
+
+# Output files (generated audio)
+output/
+/output/
+
+# Operating System files
+.DS_Store
+Thumbs.db
